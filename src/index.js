@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './styles.css';
 import App from './App';
 import './components/NavBar';
-
+import './firebase/config';
 
 
 
