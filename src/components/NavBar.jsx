@@ -12,7 +12,7 @@ function Navbar(){
                     <img src={logo} className='logo-nav'  alt="logo"></img>
                 </div>
 
-                <div>
+                <div className="content-navTitle">
                     <p className="navTitle">MUNDO FUNKO</p>
                 </div>
                 

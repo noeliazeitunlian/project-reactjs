@@ -13,10 +13,15 @@ nav{
     height: 60px;
 }
 
+.content-navTitle{
+   display: flex;
+   margin-right:29%;
+   margin-top: 20px;
+}
+
 .navTitle{
     font-family: 'Zen Dots', cursive;
     color: aliceblue;
-    text-align: start;
     font-size: 23px;
 }
 
@@ -46,7 +51,7 @@ nav{
 
 #navbar li a:hover,
 #navbar li a.active{
-   color: rgb(149, 6, 168);
+   color: rgb(117, 62, 175);
 }
 
 #navbar li a:hover::after,

@@ -1,4 +1,9 @@
 
+.contenedor-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .containerCard{
     display: flex;
     flex-direction:column;
