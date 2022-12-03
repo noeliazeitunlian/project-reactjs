@@ -4,6 +4,7 @@
     width: 90%;
     font-size: 40px;
     text-align: center;
+    margin-left: 50px;
 }
 .gif-content{
     display: flex;
@@ -27,4 +28,11 @@
         font-size: 30px;
         letter-spacing: 1px;
         margin-top: 25px;    
+        text-decoration: none;
+}
+
+.btn-sinItems:hover{
+    background-color: #771b7d;
+    transition: all 800ms;
+    color: white;
 }

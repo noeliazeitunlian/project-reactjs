@@ -34,7 +34,7 @@ const Cart = () => {
     if(cart.length === 0){
         return (
             <>
-                <p className="sin-productos">No hay elementos en el carrito</p>
+                <p className="sin-productos">UPS! No hay elementos en el carrito</p>
                 <div className="gif-content"> 
                     <img src={gif} className="gif-cart animate__animated animate__fadeIn"  alt="imagen de spiderman"></img>              
                 </div>
