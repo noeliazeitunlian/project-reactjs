@@ -1,7 +1,52 @@
 .counter{
-    width: fit-content;
-    background-color: gold;
-    margin: auto;
+    box-shadow: 1px 1px 2px 1px rgb(94, 2, 75);
+    border: 1px solid #8a0493;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all 200ms;
+    margin-top: 20px;
     padding: 1rem;
     text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+.total-counter{
+    padding: 10px;
+
+}
+
+.btn-cart {
+    color: white;
+    background-color: #020202;
+    border-radius: .1em;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.btn-cart:hover {
+    background-color: #771b7d;
+    transition: all 500ms;
+    
+}
+
+.btn-finalizar {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #020202;
+    border-radius: .1em;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-size:22px;
+    text-align: center;
+}
+
+.btn-finalizar:hover {
+    background-color: #771b7d;
+    color: black;
+    transition: all 700ms;
+    
 }

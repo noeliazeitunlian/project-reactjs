@@ -1,5 +1,6 @@
 import { addDoc, collection, getFirestore } from 'firebase/firestore';
-
+import './cart.css';
+import gif from '../../images/gif.gif'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext';
@@ -33,8 +34,13 @@ const Cart = () => {
     if(cart.length === 0){
         return (
             <>
-                <p>No hay elementos en el carrito</p>
-                <Link to='/'>Hacer compras</Link>
+                <p className="sin-productos">No hay elementos en el carrito</p>
+                <div className="gif-content"> 
+                    <img src={gif} className="gif-cart animate__animated animate__fadeIn"  alt="imagen de spiderman"></img>              
+                </div>
+                <div className="btn-cart-content">     
+                    <Link to='/' className="btn-sinItems animate__animated animate__fadeIn">Comenzar compra!</Link>
+                </div>
             </>
         );
     }
@@ -44,11 +50,12 @@ const Cart = () => {
         <>
             {cart.map(product => <ItemCart key={product.id} product={product}/>)
         }
-        <p>
-            Total: {totalPrice()}
+        <p className="total-itemCart">
+            Total: ${totalPrice()}
         </p>
-
-        <button onClick={handleClick}>Generar compra</button>
+        <div className="btn-cart-content">
+            <button className="btn-comprar" onClick={handleClick}>COMPRAR</button>
+        </div>
         </>
     )
 }

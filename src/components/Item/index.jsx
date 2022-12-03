@@ -9,10 +9,16 @@ const Item = ({info}) => {
     console.log('Item: ', nombre);
 
     return (
-        <Link to={`/detail/${info.id}`} className="product">
-            <img src={info.image} alt=""/>
-            <p>{info.title}</p>
-        </Link>
+        <div className= "containerCard">
+            <div className= "card-content">
+                <Link to={`/detail/${info.id}`}>
+                <img src={info.image} className="cart-item-image" alt=""/>
+                <p className="cart-item-title">{info.title}</p>
+                <p className="cart-item-title">${info.price}</p>
+                </Link>
+
+            </div>
+        </div>
 
     );
 }

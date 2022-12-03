@@ -1,5 +1,5 @@
 import "./NavBarStyles.css";
-import logo from '../images/logo.png';
+import logo from '../images/logo2.png';
 import CartWidget from "./CartWidget";
 import { NavLink } from 'react-router-dom';
 
@@ -9,9 +9,13 @@ function Navbar(){
         <>
             <nav>
                 <div>
-                    <img src={logo} className='logo-nav'  alt="logo"></img> 
+                    <img src={logo} className='logo-nav'  alt="logo"></img>
                 </div>
-                <p className="navTitle">MUNDO FUNKO</p>
+
+                <div>
+                    <p className="navTitle">MUNDO FUNKO</p>
+                </div>
+                
                 <div>
                 <ul id="navbar">
                     <li>

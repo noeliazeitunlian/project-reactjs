@@ -1,0 +1,30 @@
+.sin-productos{
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    width: 90%;
+    font-size: 40px;
+    text-align: center;
+}
+.gif-content{
+    display: flex;
+    justify-content:center;
+}
+.gif-cart{
+    width:500px;
+    height: auto;
+}
+
+.btn-cart-content{
+    display: flex;
+    justify-content: center;
+}
+.btn-sinItems{
+        color: white;
+        background-color: #000000;
+        border-radius: .1em;
+        font-family: 'Bebas Neue', cursive;
+        padding:10px;
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin-top: 25px;    
+}
