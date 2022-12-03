@@ -7,16 +7,18 @@ import { NavLink } from 'react-router-dom';
 function Navbar(){
     return (
         <>
-            <nav>
+            <nav className="navbar navbar-expand-lg">
                 <div>
                     <img src={logo} className='logo-nav'  alt="logo"></img>
                 </div>
-
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+                </button>
                 <div className="content-navTitle">
                     <p className="navTitle">MUNDO FUNKO</p>
                 </div>
                 
-                <div>
+                <div className="collapse navbar-collapse" id="navbarNav">
                 <ul id="navbar">
                     <li>
                         <NavLink className="active" to='/'>Inicio</NavLink>
